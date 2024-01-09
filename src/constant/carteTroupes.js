@@ -1,21 +1,5 @@
 import tagsList from "./tagsList";
 
-import Affreux_sales_et_mechants from "../Images/ImagesFilm/Affreux_sales_et_mechants.jpeg";
-import alice from "../Images/ImagesFilm/Alice.jpeg";
-import casablanca from "../Images/ImagesFilm/casablanca.jpeg";
-import clerks from "../Images/ImagesFilm/clerks.jpeg";
-import climax from "../Images/ImagesFilm/climax.jpeg";
-import goupsmainsrouge from "../Images/ImagesFilm/goupsmainsrouge.jpeg";
-import Hitokiri_le_chatiment from "../Images/ImagesFilm/Hitokiri_le_chatiment.jpeg";
-import Le_Roman_d_un_tricheur from "../Images/ImagesFilm/Le_Roman_d_un_tricheur.jpeg";
-import nobody_knows from "../Images/ImagesFilm/nobody_knows.jpeg";
-import samouraishorslaloi from "../Images/ImagesFilm/3samouraishorslaloi.jpeg";
-import scopone from "../Images/ImagesFilm/scopone2.jpg";
-import tel_pere_tel_fils from "../Images/ImagesFilm/tel_pere_tel_fils.jpeg";
-import troisenterrements from "../Images/ImagesFilm/troisenterrements.jpeg";
-import undergrouns from "../Images/ImagesFilm/undergrouns.jpeg";
-import Pirates from "../Images/ImagesFilm/Pirates.png";
-
 // import florette from ""
 // import florette from "../Images/ImagesFilm"
 // import florette from "../Images/ImagesFilm"
@@ -42,24 +26,24 @@ const carteTroupes = [
 
     vie: 3,
 
-    attaque: 0,
+    attaque: 1,
     magique: 0,
     tire: 0,
     perceArmure: 0,
     briseArmure: 0,
 
     armure: 0,
-    armureMagique : 0,
+    armureMagique: 0,
     bouclier: 0,
     esquive: 0,
 
     charge: 0,
     charge2: 0,
     inébranlable: 0,
-    déplacement: 0,
+    déplacement: 3,
     redéploiment: 0,
 
-    tag: [t.francais, t.comedie, t.triste],
+    tag: [t.murDeLance, t.infiltration],
   },
   {
     id: 1,
@@ -83,17 +67,17 @@ const carteTroupes = [
     briseArmure: 0,
 
     armure: 0,
-    armureMagique : 0,
+    armureMagique: 0,
     bouclier: 0,
     esquive: 0,
 
     charge: 0,
     charge2: 0,
     inébranlable: 0,
-    déplacement: 0,
+    déplacement: 3,
     redéploiment: 0,
 
-    tag: [t.francais, t.comedie, t.triste],
+    tag: [],
   },
   {
     id: 3,
@@ -115,7 +99,7 @@ const carteTroupes = [
     briseArmure: 0,
 
     armure: 2,
-    armureMagique : 0,
+    armureMagique: 0,
     bouclier: 2,
     esquive: 0,
 
@@ -125,7 +109,7 @@ const carteTroupes = [
     déplacement: 2,
     redéploiment: 1,
 
-    tag: [t.francais, t.comedie, t.triste],
+    tag: [],
   },
   {
     id: 4,
@@ -147,7 +131,7 @@ const carteTroupes = [
     briseArmure: 0,
 
     armure: 0,
-    armureMagique : 0,
+    armureMagique: 0,
     bouclier: 0,
     esquive: 0,
 
@@ -157,7 +141,7 @@ const carteTroupes = [
     déplacement: 0,
     redéploiment: 0,
 
-    tag: [t.francais, t.comedie, t.triste],
+    tag: [],
   },
   {
     id: 5,
@@ -179,7 +163,7 @@ const carteTroupes = [
     briseArmure: 0,
 
     armure: 0,
-    armureMagique : 0,
+    armureMagique: 0,
     bouclier: 0,
     esquive: 0,
 
@@ -189,7 +173,7 @@ const carteTroupes = [
     déplacement: 0,
     redéploiment: 0,
 
-    tag: [t.francais, t.comedie, t.triste],
+    tag: [],
   },
   {
     id: 6,
@@ -212,7 +196,7 @@ const carteTroupes = [
     briseArmure: 0,
 
     armure: 0,
-    armureMagique : 0,
+    armureMagique: 0,
     bouclier: 0,
     esquive: 0,
 
@@ -222,7 +206,7 @@ const carteTroupes = [
     déplacement: 0,
     redéploiment: 0,
 
-    tag: [t.francais, t.comedie, t.triste],
+    tag: [],
   },
   {
     id: 7,
@@ -244,7 +228,7 @@ const carteTroupes = [
     briseArmure: 0,
 
     armure: 0,
-    armureMagique : 0,
+    armureMagique: 0,
     bouclier: 0,
     esquive: 0,
 
@@ -254,7 +238,7 @@ const carteTroupes = [
     déplacement: 0,
     redéploiment: 0,
 
-    tag: [t.francais, t.comedie, t.triste],
+    tag: [],
   },
   {
     id: 8,
@@ -276,7 +260,7 @@ const carteTroupes = [
     briseArmure: 0,
 
     armure: 0,
-    armureMagique : 0,
+    armureMagique: 0,
     bouclier: 0,
     esquive: 0,
 
@@ -286,7 +270,7 @@ const carteTroupes = [
     déplacement: 0,
     redéploiment: 0,
 
-    tag: [t.francais, t.comedie, t.triste],
+    tag: [],
   },
   {
     id: 9,
@@ -308,7 +292,7 @@ const carteTroupes = [
     briseArmure: 0,
 
     armure: 0,
-    armureMagique : 0,
+    armureMagique: 0,
     bouclier: 0,
     esquive: 0,
 
@@ -318,7 +302,7 @@ const carteTroupes = [
     déplacement: 0,
     redéploiment: 0,
 
-    tag: [t.francais, t.comedie, t.triste],
+    tag: [],
   },
 ];
 export default carteTroupes;

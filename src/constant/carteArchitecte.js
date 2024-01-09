@@ -17,11 +17,12 @@ const t = tagsList;
 const carteArchitecte = [
   {
     id: 0,
-    titre: "Batiment 1",
-    description: "Infantrie légére",
+    key: "a0",
+    titre: "Scierie",
+    description: "donne +1 de bois pour chaque forêt dans un rayon de 1",
     coutOr: 0,
-    coutBois: 0,
-    coutFer: 0,
+    coutBois: 2,
+    coutFer: 1,
     coutAcier: 0,
     coutNourriture: 0,
 
@@ -49,8 +50,8 @@ const carteArchitecte = [
   {
     id: 1,
     key: "a1",
-    titre: "Troupe 2",
-    description: "Infantrie légére",
+    titre: "Marché",
+    description: "Rapporte 1 or, +1 or pour chaque Fort dans un rayon de 1",
     coutOr: 0,
     coutBois: 0,
     coutFer: 0,
@@ -81,7 +82,7 @@ const carteArchitecte = [
   {
     id: 3,
     key: "a3",
-    titre: "Troupe 3",
+    titre: "Route",
     description: "Infantrie légére",
     coutOr: 0,
     coutBois: 0,
@@ -113,8 +114,8 @@ const carteArchitecte = [
   {
     id: 4,
     key: "a4",
-    titre: "Troupe 4",
-    description: "Infantrie légére",
+    titre: "Caserne",
+    description: "",
     coutOr: 0,
     coutBois: 0,
     coutFer: 0,

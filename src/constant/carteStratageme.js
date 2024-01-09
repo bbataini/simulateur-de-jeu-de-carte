@@ -1,20 +1,5 @@
 import tagsList from "./tagsList";
 
-import Affreux_sales_et_mechants from "../Images/ImagesFilm/Affreux_sales_et_mechants.jpeg";
-import alice from "../Images/ImagesFilm/Alice.jpeg";
-import casablanca from "../Images/ImagesFilm/casablanca.jpeg";
-import clerks from "../Images/ImagesFilm/clerks.jpeg";
-import climax from "../Images/ImagesFilm/climax.jpeg";
-import goupsmainsrouge from "../Images/ImagesFilm/goupsmainsrouge.jpeg";
-import Hitokiri_le_chatiment from "../Images/ImagesFilm/Hitokiri_le_chatiment.jpeg";
-import Le_Roman_d_un_tricheur from "../Images/ImagesFilm/Le_Roman_d_un_tricheur.jpeg";
-import nobody_knows from "../Images/ImagesFilm/nobody_knows.jpeg";
-import samouraishorslaloi from "../Images/ImagesFilm/3samouraishorslaloi.jpeg";
-import scopone from "../Images/ImagesFilm/scopone2.jpg";
-import tel_pere_tel_fils from "../Images/ImagesFilm/tel_pere_tel_fils.jpeg";
-import troisenterrements from "../Images/ImagesFilm/troisenterrements.jpeg";
-import undergrouns from "../Images/ImagesFilm/undergrouns.jpeg";
-import Pirates from "../Images/ImagesFilm/Pirates.png";
 
 // import florette from ""
 // import florette from "../Images/ImagesFilm"
@@ -32,8 +17,8 @@ const carteStratageme = [
   {
     id: 0,
     key: "s0",
-    titre: "Troupe 1",
-    description: "Infantrie légére",
+    titre: "Charge Héroique",
+    description: "Ajouter un jeton charge là où vous en possédiez un",
     coutOr: 0,
     coutBois: 0,
     coutFer: 0,

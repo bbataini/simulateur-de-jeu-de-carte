@@ -7,9 +7,11 @@ import {
   Modal,
   Header,
   Label,
-  Rating,
   Button,
+  Icon,
 } from "semantic-ui-react";
+
+import orImg from "../Images/ImagesFilm/piece-de-monnaie.png";
 
 function TroupCard(props) {
   const { film, setIdCardRemove } = props;
@@ -27,7 +29,7 @@ function TroupCard(props) {
         onClose={() => setModalPath(false)}
         onOpen={() => setModalPath(true)}
         trigger={
-          <Card>
+          <Card color="red">
             <Card.Content>
               <Card.Header>{film && film.titre}</Card.Header>
 
@@ -39,6 +41,39 @@ function TroupCard(props) {
 
             <Card.Content>
               <Grid columns={2}>
+                <Grid.Column>
+                  <Card.Description>
+                    {film &&
+                      film.attaque > 0 &&
+                      "Attaque : " + film.attaque + " "}
+                  </Card.Description>
+                  <Card.Description>
+                    {film &&
+                      film.magique > 0 &&
+                      "Magie : " + film.magique + " "}
+                  </Card.Description>
+                  <Card.Description>
+                    {film && film.tire > 0 && "Tir : " + film.tire + " "}
+                  </Card.Description>
+                  <Card.Description>
+                    {film &&
+                      film.perceArmure > 0 &&
+                      "Perçant : " + film.perceArmure + " "}
+                  </Card.Description>
+                  <Card.Description>
+                    {film &&
+                      film.briseArmure > 0 &&
+                      "Brisant : " + film.briseArmure + " "}
+                  </Card.Description>
+                  <Card.Description>
+                    {film && film.charge > 0 && "Charge : " + film.charge + " "}
+                  </Card.Description>
+                  <Card.Description>
+                    {film &&
+                      film.charge2 > 0 &&
+                      "Charge final : " + film.charge2 + " "}
+                  </Card.Description>
+                </Grid.Column>
 
                 <Grid.Column>
                   <Grid.Row>
@@ -48,34 +83,66 @@ function TroupCard(props) {
                   </Grid.Row>
                   <Grid.Row>
                     <Card.Description>
-                      {film && film.armure > 0 && "Armure : " + film.armure + " "}
+                      {film &&
+                        film.armure > 0 &&
+                        "Armure : " + film.armure + " "}
                     </Card.Description>
                   </Grid.Row>
                   <Grid.Row>
                     <Card.Description>
-                      {film && film.esquive > 0 && "Esquive : " + film.esquive + " "}
+                      {film &&
+                        film.esquive > 0 &&
+                        "Esquive : " + film.esquive + " "}
                     </Card.Description>
                   </Grid.Row>
                   <Grid.Row>
                     <Card.Description>
-                      {film && film.coutOr > 0 && "Pv : " + film.vie + " "}
+                      {film &&
+                        film.bouclier > 0 &&
+                        "Bouclier : " + film.bouclier + " "}
+                    </Card.Description>
+                    <Card.Description>
+                      {film &&
+                        film.inébranlable > 0 &&
+                        "Inébranlable : " + film.inébranlable + " "}
+                    </Card.Description>
+                    <Card.Description>
+                      {film &&
+                        film.déplacement > 0 &&
+                        "Déplacement : " + film.déplacement + " "}
+                    </Card.Description>
+                    <Card.Description>
+                      {film &&
+                        film.redéploiment > 0 &&
+                        "Redéploiement : " + film.redéploiment + " "}
                     </Card.Description>
                   </Grid.Row>
                 </Grid.Column>
-
-                <Grid.Column>
-                  <Card.Description>
-                    {film &&
-                      film.coutOr > 0 &&
-                      "Attaque : " + film.attaque + " "}
-                  </Card.Description>
-                </Grid.Column>
-
               </Grid>
             </Card.Content>
 
+            <Card.Content>
+              {film &&
+                film.tag &&
+                film.tag.map((tag, i) => {
+                  //const {label, icon} = tag
+                  return (
+                    <Label image key={i}>
+                      <Image src={tag && tag.icon} />
+                      {tag && tag.label}
+                    </Label>
+                  );
+                })}
+            </Card.Content>
+
             <Card.Content extra>
-              {film && film.coutOr > 0 && "Or :" + film.coutOr + " "}
+              {film && film.coutOr > 0 && (
+                <Label  basic>
+                  {film.coutOr} 
+                  <Image spaced='left' src={orImg} />
+                </Label>
+              )}
+
               {film &&
                 film.coutNourriture > 0 &&
                 "Nourriture :" + film.coutOr + " "}
